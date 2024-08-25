@@ -1,5 +1,4 @@
 node_modules
 
-config.env
+.env
 Dockerfile
-netlify.toml

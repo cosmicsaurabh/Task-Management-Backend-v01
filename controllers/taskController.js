@@ -27,7 +27,6 @@ exports.getAllTasks = async (req, res) => {
   const taskss = await Task.find();
 
   res.status(200).json({
-    // message: 'Item edited successfully',
     success: true,
     taskss,
   });
@@ -36,7 +35,6 @@ exports.getAllTasks = async (req, res) => {
 exports.deleteTask = async (req, res) => {
   const id = req.params.id;
 
-  // Find the item by ID and delete it
   const deletedItem = await Task.findById(id);
 
   if (!deletedItem) {

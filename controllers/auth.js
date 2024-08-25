@@ -43,8 +43,8 @@ exports.login = async (req, res) => {
     const user = await User.findOne({ email: email });
     if (!user) return res.status(400).json({ msg: "User does not exist" });
     const isMatch = await bcrypt.compare(req.body.password, user.password);
-    //console.log("User's entered password:", req.body.password);
-    //console.log("Stored hashed password:", user.password);
+    ////console.log("User's entered password:", req.body.password);
+    ////console.log("Stored hashed password:", user.password);
 
     if (!isMatch)
       return res.status(400).json({ msg: "Credentials does not match" });

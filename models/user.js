@@ -94,7 +94,7 @@ UserSchema.methods.generateToken = async function () {
       },
     );
   } catch (error) {
-    //console.log(error);
+    ////console.log(error);
   }
 };
 
@@ -104,7 +104,7 @@ UserSchema.methods.comparePassword = async function (password) {
 
 //save mylb db me store hone se ohle ye run hoga
 UserSchema.pre("save", async function (next) {
-  //console.log("premethod",this);
+  ////console.log("premethod",this);
   const user = this;
   if (!user.isModified("password")) {
     next();
@@ -119,5 +119,4 @@ UserSchema.pre("save", async function (next) {
 });
 
 module.exports = mongoose.model("User", UserSchema);
-// const User= mongoose.model("User",UserSchema);
-// export default User;
+
