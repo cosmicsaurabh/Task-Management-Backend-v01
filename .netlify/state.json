@@ -1,0 +1,20 @@
+{
+	"siteId": "eabd210e-f624-4710-ba7c-9b4060b1ac05",
+	"geolocation": {
+		"data": {
+			"city": "Jaipur",
+			"country": {
+				"code": "IN",
+				"name": "India"
+			},
+			"subdivision": {
+				"code": "RJ",
+				"name": "Rajasthan"
+			},
+			"timezone": "Asia/Kolkata",
+			"latitude": 26.9525,
+			"longitude": 75.7105
+		},
+		"timestamp": 1724438253405
+	}
+}
